@@ -17,6 +17,7 @@ function Login() {
 function submitForm(event){
 event.preventDefault();
 console.log("from login")
+//redirect auf /home
 }
 
   return (
