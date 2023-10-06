@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { Routes, Route, Outlet, NavLink } from 'react-router-dom';
-import Home from './components/pages/landing-page';
-import About from './components/pages/about-page';
-import Login from './components/pages/login-page';
-import Register from './components/pages/register-page'
+import Home from './pages/landing-page';
+import About from './pages/about-page';
+import Login from './pages/login-page';
+import Register from './pages/register-page'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
