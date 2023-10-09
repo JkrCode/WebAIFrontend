@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import axios from 'axios'; // Import Axios
-import { useNavigate } from 'react-router-dom'; // Import the hook
+import axios from 'axios'; 
+import { useNavigate } from 'react-router-dom'; 
 
 
 function Login({ setUserId, userId }) {
@@ -21,21 +21,17 @@ function Login({ setUserId, userId }) {
     event.preventDefault();
 
     try {
-      // Send a POST request to the login endpoint with username and password
       const response = await axios.post('http://localhost:3000/user/login', {
         username: userName,
         password: password,
       });
 
-      // Assuming the response contains a user ID upon successful login
-      const authenticatedUserId = response.data.user.id; // Replace with the actual key in your response data
+      const authenticatedUserId = response.data.user.id;
       console.log(response.data)
-      // Set the userId and redirect to /home
       setUserId(authenticatedUserId);
       navigate('/home');
     } catch (error) {
       console.error('Login failed:', error);
-      // Handle login error, display an error message, etc.
     }
   }
 
