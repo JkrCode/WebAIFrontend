@@ -5,16 +5,22 @@ import About from './pages/about-page';
 import Login from './pages/login-page';
 import Register from './pages/register-page'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useState } from 'react';
 
 
 const App = () => {
+
+  const [userId, setUserId] = useState("")
+
+
+
   return (
     <Routes>
       <Route element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="home" element={<Home />} />
+        <Route path="home" element={<Home userId={userId} />} />
         <Route path="about" element={<About />} />
-        <Route path="login" element={<Login />} />
+        <Route path="login" element={<Login userId={userId} setUserId={setUserId}/>} />
         <Route path="register" element={<Register />} />
         <Route path="*" element={<p>There's nothing here: 404!</p>} />
       </Route>
