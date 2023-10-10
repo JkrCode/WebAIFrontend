@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios'; 
 import { useNavigate } from 'react-router-dom'; 
+import containerStyle from '../helper-functions';
+import { contentStyle } from '../helper-functions';
 
 
 function Login({ setUserId, userId }) {
@@ -36,9 +38,11 @@ function Login({ setUserId, userId }) {
   }
 
   return (
-    <div className='container'>
-      <div className='row justify-content-center'>
-        <div className='col-sm-4'>
+    <div style={containerStyle}>
+      <div className='container' >
+        <div className=" row justify-content-center" >
+        <div className='col-sm-9 row justify-content-center' style={contentStyle}>
+          <div className='col-sm-4'>
           <form>
             <div className="mb-3">
               <label className="form-label">Username</label>
@@ -54,9 +58,15 @@ function Login({ setUserId, userId }) {
             </div>
             <button type="submit" onClick={submitForm} className="btn btn-primary">Login</button>
           </form>
+          </div>
+          
         </div>
+
+        </div>
+        
       </div>
     </div>
+    
   );
 }
 

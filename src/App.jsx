@@ -71,7 +71,7 @@ const Layout = () => {
         </div>
       </nav>
 
-      <main style={{ padding: '1rem 0' }}>
+      <main>
         <Outlet />
       </main>
     </>
