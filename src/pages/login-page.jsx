@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios'; 
 import { useNavigate } from 'react-router-dom'; 
-import containerStyle from '../helper-functions';
-import { contentStyle } from '../helper-functions';
+import containerStyle, { overlayStyle } from '../helper-functions';
 
 
 function Login({ setUserId, userId }) {
@@ -41,7 +40,7 @@ function Login({ setUserId, userId }) {
     <div style={containerStyle}>
       <div className='container' >
         <div className=" row justify-content-center" >
-        <div className='col-sm-9 row justify-content-center' style={contentStyle}>
+        <div className='col-sm-9 row justify-content-center' style={overlayStyle}>
           <div className='col-sm-4'>
           <form>
             <div className="mb-3">
