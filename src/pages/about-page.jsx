@@ -1,8 +1,10 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { BsFillChatSquareHeartFill } from 'react-icons/bs';
-import {textContainerStyle, roundedImageStyle } from '../helper-functions'
+import { roundedImageStyle } from '../helper-functions'
+import containerStyle from '../helper-functions';
+import { overlayStyle } from '../helper-functions';
 
 function About() {
   

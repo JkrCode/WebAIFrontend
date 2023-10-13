@@ -23,7 +23,7 @@ const roundedImageStyle = {
   maxWidth: '40%',
   borderRadius: '10px',
   float: 'left',
-  marginRight: '20px', // Abstand zwischen Bild und Text
+  marginRight: '20px'
 };
 
     export default containerStyle;
